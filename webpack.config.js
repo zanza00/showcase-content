@@ -10,9 +10,7 @@ module.exports = (webpackConfigEnv, argv) => {
     outputSystemJS: false,
   });
 
-  console.log(defaultConfig);
-
   return merge(defaultConfig, {
-    // modify the webpack config however you'd like to by adding to this object
+    externals: ["@showcase/shared-libs"],
   });
 };

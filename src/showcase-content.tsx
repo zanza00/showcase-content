@@ -3,6 +3,9 @@ import ReactDOMClient from "react-dom/client";
 import singleSpaReact from "single-spa-react";
 import Root from "./root.component";
 
+// Export slide manifest for shell to consume
+export { contentManifest } from "./manifests/content.manifest";
+
 const lifecycles = singleSpaReact({
   React,
   ReactDOMClient,
