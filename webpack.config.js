@@ -3,7 +3,7 @@ const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
 
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
-    orgName: "showcase",
+    orgName: "zanza00",
     projectName: "content",
     webpackConfigEnv,
     argv,
@@ -11,6 +11,5 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    externals: ["@showcase/shared-libs"],
   });
 };

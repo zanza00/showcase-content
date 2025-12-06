@@ -1,4 +1,4 @@
-import type { SlideManifest } from "@showcase/shared-libs";
+import type { SlideManifest } from "@zanza00/shared-libs";
 
 export const contentManifest: SlideManifest = {
   order: 2,
